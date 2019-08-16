@@ -3,6 +3,9 @@
   "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
   "rules": {
     "prettier": true,
-    "no-boolean-literal-compare": false
+    "no-boolean-literal-compare": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "interface-name": [true, "never-prefix"]
   }
 }
