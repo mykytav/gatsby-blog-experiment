@@ -1,10 +1,10 @@
 ---
-title: "Post2"
-slug: "/second-post"
-date: "19-08-2019"
+title: "Post3"
+slug: "/third-post"
+date: "20-08-2019"
 ---
 
-## Wasyanya
+## Chorizo 🥺
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium dictum condimentum. Fusce gravida mauris nulla. Pellentesque ex diam, pretium quis metus sodales, varius sodales diam. In feugiat purus at tortor posuere ornare. Donec scelerisque laoreet pharetra. Sed volutpat dui non rhoncus rhoncus. Donec non purus non odio blandit elementum in mollis velit. Mauris viverra tellus sed venenatis condimentum. Donec pharetra, est ut dignissim ullamcorper, justo lectus varius tortor, id fringilla mauris leo et ante. Aliquam id facilisis mauris.
 

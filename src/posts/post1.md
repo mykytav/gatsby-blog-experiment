@@ -1,6 +1,6 @@
 ---
 title: "Post1"
-slug: "/post-1"
+slug: "/first-post"
 date: "17-08-2019"
 ---
 
