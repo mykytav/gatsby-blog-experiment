@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Testing Gatsby cause you know just trying it out`,
     author: `@mykytav`,
+    siteUrl: "https://flamboyant-wiles-a4aa81.netlify.com",
   },
   plugins: [
     {
@@ -38,6 +39,8 @@ module.exports = {
         // Add any options here
       },
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
   ],
 };

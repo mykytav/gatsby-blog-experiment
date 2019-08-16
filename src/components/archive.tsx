@@ -11,7 +11,7 @@ const BLOG_POST_ARCHIVE = graphql`
           frontmatter {
             title
             slug
-            date
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }

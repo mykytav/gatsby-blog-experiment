@@ -1,7 +1,13 @@
 ---
 title: "Post3"
 slug: "/third-post"
-date: "20-08-2019"
+date: 2019-08-16T16:34:01.520Z
+draft: false
+categories: General
+tags:
+  - Chorizo
+author: Mykyta Vlasov
+type: post
 ---
 
 ## Chorizo 🥺

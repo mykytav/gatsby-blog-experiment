@@ -1,7 +1,13 @@
 ---
 title: "Post2"
 slug: "/second-post"
-date: "19-08-2019"
+date: 2019-08-16T16:34:01.520Z
+draft: false
+categories: General
+tags:
+  - Wasyanya
+author: Mykyta Vlasov
+type: post
 ---
 
 ## Wasyanya

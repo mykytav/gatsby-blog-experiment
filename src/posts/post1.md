@@ -1,7 +1,13 @@
 ---
 title: "Post1"
 slug: "/first-post"
-date: "17-08-2019"
+date: 2019-08-16T16:34:01.520Z
+draft: fasle
+categories: General
+tags:
+  - Hello
+author: Mykyta Vlasov
+type: post
 ---
 
 ## Hello
