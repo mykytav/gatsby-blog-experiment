@@ -1,6 +1,6 @@
 ---
 title: Post Four
-slug: fourth-post
+slug: /fourth-post
 date: 2019-08-16T16:34:01.520Z
 draft: false
 categories: post
