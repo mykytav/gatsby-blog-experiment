@@ -42,8 +42,8 @@ const Layout: React.FC<Props> = ({ location, children }) => {
   `);
 
   const styles = useSpring({
-    from: { height: location.pathname === "/" ? 100 : 200 },
-    to: { height: location.pathname === "/" ? 200 : 100 },
+    from: { height: location.pathname === "/" ? 300 : 600 },
+    to: { height: location.pathname === "/" ? 600 : 300 },
     config: config.default,
   });
 
