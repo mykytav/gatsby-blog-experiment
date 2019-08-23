@@ -8,7 +8,7 @@ tags:
   - young-thug
 author: Mykyta Vlasov
 type: post
-postImage: /uploads/denys-nevozhai-d8izplx-2fs-unsplash-1-.jpg
+cover_img: /uploads/denys-nevozhai-d8izplx-2fs-unsplash-1-.jpg
 ---
 In the project directory, you can run:
 
