@@ -8,6 +8,7 @@ tags:
   - Wasyanya
 author: Mykyta Vlasov
 type: post
+cover_img: ../images/img2.jpg
 ---
 
 ## Wasyanya

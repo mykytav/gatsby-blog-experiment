@@ -8,6 +8,7 @@ tags:
   - Hello
 author: Mykyta Vlasov
 type: post
+cover_img: ../images/img3.jpg
 ---
 
 ## Hello

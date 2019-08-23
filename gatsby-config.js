@@ -1,3 +1,10 @@
+const netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  },
+};
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -32,12 +39,32 @@ module.exports = {
         ignore: [`**/\.*`],
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/uploads`,
+        name: "cover_img",
+      },
+    },
+    netlifyCmsPaths,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          netlifyCmsPaths,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+              backgroundColor: "transparent",
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
+      options: {},
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify-cms`,

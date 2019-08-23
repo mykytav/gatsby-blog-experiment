@@ -1,14 +1,13 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import Img from "gatsby-image";
-import { animated, useSpring } from "react-spring";
+import { animated, useSpring, config } from "react-spring";
 import styled from "styled-components";
 
 import Archive from "./archive";
 import Header from "./header";
 import { Location } from "../common.types";
 import "./layout.css";
-import { config } from "react-spring";
 
 const Wrapper = styled.div/*css*/ `
   margin: 1rem auto;

@@ -677,6 +677,46 @@ export enum FileFieldsEnum {
   ChildMarkdownRemarkFrontmatterTitle = "childMarkdownRemark___frontmatter___title",
   ChildMarkdownRemarkFrontmatterSlug = "childMarkdownRemark___frontmatter___slug",
   ChildMarkdownRemarkFrontmatterDate = "childMarkdownRemark___frontmatter___date",
+  ChildMarkdownRemarkFrontmatterCategories = "childMarkdownRemark___frontmatter___categories",
+  ChildMarkdownRemarkFrontmatterTags = "childMarkdownRemark___frontmatter___tags",
+  ChildMarkdownRemarkFrontmatterAuthor = "childMarkdownRemark___frontmatter___author",
+  ChildMarkdownRemarkFrontmatterType = "childMarkdownRemark___frontmatter___type",
+  ChildMarkdownRemarkFrontmatterCoverImgBirthtime = "childMarkdownRemark___frontmatter___cover_img___birthtime",
+  ChildMarkdownRemarkFrontmatterCoverImgBirthtimeMs = "childMarkdownRemark___frontmatter___cover_img___birthtimeMs",
+  ChildMarkdownRemarkFrontmatterCoverImgSourceInstanceName = "childMarkdownRemark___frontmatter___cover_img___sourceInstanceName",
+  ChildMarkdownRemarkFrontmatterCoverImgAbsolutePath = "childMarkdownRemark___frontmatter___cover_img___absolutePath",
+  ChildMarkdownRemarkFrontmatterCoverImgRelativePath = "childMarkdownRemark___frontmatter___cover_img___relativePath",
+  ChildMarkdownRemarkFrontmatterCoverImgExtension = "childMarkdownRemark___frontmatter___cover_img___extension",
+  ChildMarkdownRemarkFrontmatterCoverImgSize = "childMarkdownRemark___frontmatter___cover_img___size",
+  ChildMarkdownRemarkFrontmatterCoverImgPrettySize = "childMarkdownRemark___frontmatter___cover_img___prettySize",
+  ChildMarkdownRemarkFrontmatterCoverImgModifiedTime = "childMarkdownRemark___frontmatter___cover_img___modifiedTime",
+  ChildMarkdownRemarkFrontmatterCoverImgAccessTime = "childMarkdownRemark___frontmatter___cover_img___accessTime",
+  ChildMarkdownRemarkFrontmatterCoverImgChangeTime = "childMarkdownRemark___frontmatter___cover_img___changeTime",
+  ChildMarkdownRemarkFrontmatterCoverImgBirthTime = "childMarkdownRemark___frontmatter___cover_img___birthTime",
+  ChildMarkdownRemarkFrontmatterCoverImgRoot = "childMarkdownRemark___frontmatter___cover_img___root",
+  ChildMarkdownRemarkFrontmatterCoverImgDir = "childMarkdownRemark___frontmatter___cover_img___dir",
+  ChildMarkdownRemarkFrontmatterCoverImgBase = "childMarkdownRemark___frontmatter___cover_img___base",
+  ChildMarkdownRemarkFrontmatterCoverImgExt = "childMarkdownRemark___frontmatter___cover_img___ext",
+  ChildMarkdownRemarkFrontmatterCoverImgName = "childMarkdownRemark___frontmatter___cover_img___name",
+  ChildMarkdownRemarkFrontmatterCoverImgRelativeDirectory = "childMarkdownRemark___frontmatter___cover_img___relativeDirectory",
+  ChildMarkdownRemarkFrontmatterCoverImgDev = "childMarkdownRemark___frontmatter___cover_img___dev",
+  ChildMarkdownRemarkFrontmatterCoverImgMode = "childMarkdownRemark___frontmatter___cover_img___mode",
+  ChildMarkdownRemarkFrontmatterCoverImgNlink = "childMarkdownRemark___frontmatter___cover_img___nlink",
+  ChildMarkdownRemarkFrontmatterCoverImgUid = "childMarkdownRemark___frontmatter___cover_img___uid",
+  ChildMarkdownRemarkFrontmatterCoverImgGid = "childMarkdownRemark___frontmatter___cover_img___gid",
+  ChildMarkdownRemarkFrontmatterCoverImgRdev = "childMarkdownRemark___frontmatter___cover_img___rdev",
+  ChildMarkdownRemarkFrontmatterCoverImgBlksize = "childMarkdownRemark___frontmatter___cover_img___blksize",
+  ChildMarkdownRemarkFrontmatterCoverImgIno = "childMarkdownRemark___frontmatter___cover_img___ino",
+  ChildMarkdownRemarkFrontmatterCoverImgBlocks = "childMarkdownRemark___frontmatter___cover_img___blocks",
+  ChildMarkdownRemarkFrontmatterCoverImgAtimeMs = "childMarkdownRemark___frontmatter___cover_img___atimeMs",
+  ChildMarkdownRemarkFrontmatterCoverImgMtimeMs = "childMarkdownRemark___frontmatter___cover_img___mtimeMs",
+  ChildMarkdownRemarkFrontmatterCoverImgCtimeMs = "childMarkdownRemark___frontmatter___cover_img___ctimeMs",
+  ChildMarkdownRemarkFrontmatterCoverImgAtime = "childMarkdownRemark___frontmatter___cover_img___atime",
+  ChildMarkdownRemarkFrontmatterCoverImgMtime = "childMarkdownRemark___frontmatter___cover_img___mtime",
+  ChildMarkdownRemarkFrontmatterCoverImgCtime = "childMarkdownRemark___frontmatter___cover_img___ctime",
+  ChildMarkdownRemarkFrontmatterCoverImgPublicUrl = "childMarkdownRemark___frontmatter___cover_img___publicURL",
+  ChildMarkdownRemarkFrontmatterCoverImgId = "childMarkdownRemark___frontmatter___cover_img___id",
+  ChildMarkdownRemarkFrontmatterCoverImgChildren = "childMarkdownRemark___frontmatter___cover_img___children",
   ChildMarkdownRemarkExcerpt = "childMarkdownRemark___excerpt",
   ChildMarkdownRemarkRawMarkdownBody = "childMarkdownRemark___rawMarkdownBody",
   ChildMarkdownRemarkFileAbsolutePath = "childMarkdownRemark___fileAbsolutePath",
@@ -1429,6 +1469,71 @@ export enum MarkdownRemarkFieldsEnum {
   FrontmatterTitle = "frontmatter___title",
   FrontmatterSlug = "frontmatter___slug",
   FrontmatterDate = "frontmatter___date",
+  FrontmatterCategories = "frontmatter___categories",
+  FrontmatterTags = "frontmatter___tags",
+  FrontmatterAuthor = "frontmatter___author",
+  FrontmatterType = "frontmatter___type",
+  FrontmatterCoverImgBirthtime = "frontmatter___cover_img___birthtime",
+  FrontmatterCoverImgBirthtimeMs = "frontmatter___cover_img___birthtimeMs",
+  FrontmatterCoverImgSourceInstanceName = "frontmatter___cover_img___sourceInstanceName",
+  FrontmatterCoverImgAbsolutePath = "frontmatter___cover_img___absolutePath",
+  FrontmatterCoverImgRelativePath = "frontmatter___cover_img___relativePath",
+  FrontmatterCoverImgExtension = "frontmatter___cover_img___extension",
+  FrontmatterCoverImgSize = "frontmatter___cover_img___size",
+  FrontmatterCoverImgPrettySize = "frontmatter___cover_img___prettySize",
+  FrontmatterCoverImgModifiedTime = "frontmatter___cover_img___modifiedTime",
+  FrontmatterCoverImgAccessTime = "frontmatter___cover_img___accessTime",
+  FrontmatterCoverImgChangeTime = "frontmatter___cover_img___changeTime",
+  FrontmatterCoverImgBirthTime = "frontmatter___cover_img___birthTime",
+  FrontmatterCoverImgRoot = "frontmatter___cover_img___root",
+  FrontmatterCoverImgDir = "frontmatter___cover_img___dir",
+  FrontmatterCoverImgBase = "frontmatter___cover_img___base",
+  FrontmatterCoverImgExt = "frontmatter___cover_img___ext",
+  FrontmatterCoverImgName = "frontmatter___cover_img___name",
+  FrontmatterCoverImgRelativeDirectory = "frontmatter___cover_img___relativeDirectory",
+  FrontmatterCoverImgDev = "frontmatter___cover_img___dev",
+  FrontmatterCoverImgMode = "frontmatter___cover_img___mode",
+  FrontmatterCoverImgNlink = "frontmatter___cover_img___nlink",
+  FrontmatterCoverImgUid = "frontmatter___cover_img___uid",
+  FrontmatterCoverImgGid = "frontmatter___cover_img___gid",
+  FrontmatterCoverImgRdev = "frontmatter___cover_img___rdev",
+  FrontmatterCoverImgBlksize = "frontmatter___cover_img___blksize",
+  FrontmatterCoverImgIno = "frontmatter___cover_img___ino",
+  FrontmatterCoverImgBlocks = "frontmatter___cover_img___blocks",
+  FrontmatterCoverImgAtimeMs = "frontmatter___cover_img___atimeMs",
+  FrontmatterCoverImgMtimeMs = "frontmatter___cover_img___mtimeMs",
+  FrontmatterCoverImgCtimeMs = "frontmatter___cover_img___ctimeMs",
+  FrontmatterCoverImgAtime = "frontmatter___cover_img___atime",
+  FrontmatterCoverImgMtime = "frontmatter___cover_img___mtime",
+  FrontmatterCoverImgCtime = "frontmatter___cover_img___ctime",
+  FrontmatterCoverImgPublicUrl = "frontmatter___cover_img___publicURL",
+  FrontmatterCoverImgId = "frontmatter___cover_img___id",
+  FrontmatterCoverImgParentId = "frontmatter___cover_img___parent___id",
+  FrontmatterCoverImgParentChildren = "frontmatter___cover_img___parent___children",
+  FrontmatterCoverImgChildren = "frontmatter___cover_img___children",
+  FrontmatterCoverImgChildrenId = "frontmatter___cover_img___children___id",
+  FrontmatterCoverImgChildrenChildren = "frontmatter___cover_img___children___children",
+  FrontmatterCoverImgInternalContent = "frontmatter___cover_img___internal___content",
+  FrontmatterCoverImgInternalContentDigest = "frontmatter___cover_img___internal___contentDigest",
+  FrontmatterCoverImgInternalDescription = "frontmatter___cover_img___internal___description",
+  FrontmatterCoverImgInternalFieldOwners = "frontmatter___cover_img___internal___fieldOwners",
+  FrontmatterCoverImgInternalIgnoreType = "frontmatter___cover_img___internal___ignoreType",
+  FrontmatterCoverImgInternalMediaType = "frontmatter___cover_img___internal___mediaType",
+  FrontmatterCoverImgInternalOwner = "frontmatter___cover_img___internal___owner",
+  FrontmatterCoverImgInternalType = "frontmatter___cover_img___internal___type",
+  FrontmatterCoverImgChildImageSharpId = "frontmatter___cover_img___childImageSharp___id",
+  FrontmatterCoverImgChildImageSharpChildren = "frontmatter___cover_img___childImageSharp___children",
+  FrontmatterCoverImgChildMarkdownRemarkId = "frontmatter___cover_img___childMarkdownRemark___id",
+  FrontmatterCoverImgChildMarkdownRemarkExcerpt = "frontmatter___cover_img___childMarkdownRemark___excerpt",
+  FrontmatterCoverImgChildMarkdownRemarkRawMarkdownBody = "frontmatter___cover_img___childMarkdownRemark___rawMarkdownBody",
+  FrontmatterCoverImgChildMarkdownRemarkFileAbsolutePath = "frontmatter___cover_img___childMarkdownRemark___fileAbsolutePath",
+  FrontmatterCoverImgChildMarkdownRemarkHtml = "frontmatter___cover_img___childMarkdownRemark___html",
+  FrontmatterCoverImgChildMarkdownRemarkHtmlAst = "frontmatter___cover_img___childMarkdownRemark___htmlAst",
+  FrontmatterCoverImgChildMarkdownRemarkExcerptAst = "frontmatter___cover_img___childMarkdownRemark___excerptAst",
+  FrontmatterCoverImgChildMarkdownRemarkHeadings = "frontmatter___cover_img___childMarkdownRemark___headings",
+  FrontmatterCoverImgChildMarkdownRemarkTimeToRead = "frontmatter___cover_img___childMarkdownRemark___timeToRead",
+  FrontmatterCoverImgChildMarkdownRemarkTableOfContents = "frontmatter___cover_img___childMarkdownRemark___tableOfContents",
+  FrontmatterCoverImgChildMarkdownRemarkChildren = "frontmatter___cover_img___childMarkdownRemark___children",
   Excerpt = "excerpt",
   RawMarkdownBody = "rawMarkdownBody",
   FileAbsolutePath = "fileAbsolutePath",
@@ -1552,13 +1657,30 @@ export type MarkdownRemarkFrontmatter = {
   __typename?: "MarkdownRemarkFrontmatter";
   title?: Maybe<Scalars["String"]>;
   slug?: Maybe<Scalars["String"]>;
-  date?: Maybe<Scalars["String"]>;
+  date?: Maybe<Scalars["Date"]>;
+  categories?: Maybe<Scalars["String"]>;
+  tags?: Maybe<Array<Maybe<Scalars["String"]>>>;
+  author?: Maybe<Scalars["String"]>;
+  type?: Maybe<Scalars["String"]>;
+  cover_img?: Maybe<File>;
+};
+
+export type MarkdownRemarkFrontmatterDateArgs = {
+  formatString?: Maybe<Scalars["String"]>;
+  fromNow?: Maybe<Scalars["Boolean"]>;
+  difference?: Maybe<Scalars["String"]>;
+  locale?: Maybe<Scalars["String"]>;
 };
 
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   slug?: Maybe<StringQueryOperatorInput>;
-  date?: Maybe<StringQueryOperatorInput>;
+  date?: Maybe<DateQueryOperatorInput>;
+  categories?: Maybe<StringQueryOperatorInput>;
+  tags?: Maybe<StringQueryOperatorInput>;
+  author?: Maybe<StringQueryOperatorInput>;
+  type?: Maybe<StringQueryOperatorInput>;
+  cover_img?: Maybe<FileFilterInput>;
 };
 
 export type MarkdownRemarkGroupConnection = {
@@ -1785,6 +1907,7 @@ export type QuerySitePluginArgs = {
   version?: Maybe<StringQueryOperatorInput>;
   pluginOptions?: Maybe<SitePluginPluginOptionsFilterInput>;
   nodeAPIs?: Maybe<StringQueryOperatorInput>;
+  browserAPIs?: Maybe<StringQueryOperatorInput>;
   ssrAPIs?: Maybe<StringQueryOperatorInput>;
   pluginFilepath?: Maybe<StringQueryOperatorInput>;
   packageJson?: Maybe<SitePluginPackageJsonFilterInput>;
@@ -2002,6 +2125,7 @@ export enum SiteFieldsEnum {
   SiteMetadataTitle = "siteMetadata___title",
   SiteMetadataDescription = "siteMetadata___description",
   SiteMetadataAuthor = "siteMetadata___author",
+  SiteMetadataSiteUrl = "siteMetadata___siteUrl",
   Port = "port",
   Host = "host",
   Polyfill = "polyfill",
@@ -2178,7 +2302,6 @@ export enum SitePageFieldsEnum {
   ComponentChunkName = "componentChunkName",
   IsCreatedByStatefulCreatePages = "isCreatedByStatefulCreatePages",
   ContextSlug = "context___slug",
-  PluginCreatorId = "pluginCreator___id",
   PluginCreatorParentId = "pluginCreator___parent___id",
   PluginCreatorParentParentId = "pluginCreator___parent___parent___id",
   PluginCreatorParentParentChildren = "pluginCreator___parent___parent___children",
@@ -2219,13 +2342,34 @@ export enum SitePageFieldsEnum {
   PluginCreatorResolve = "pluginCreator___resolve",
   PluginCreatorName = "pluginCreator___name",
   PluginCreatorVersion = "pluginCreator___version",
+  PluginCreatorPluginOptionsPlugins = "pluginCreator___pluginOptions___plugins",
+  PluginCreatorPluginOptionsPluginsResolve = "pluginCreator___pluginOptions___plugins___resolve",
+  PluginCreatorPluginOptionsPluginsId = "pluginCreator___pluginOptions___plugins___id",
+  PluginCreatorPluginOptionsPluginsName = "pluginCreator___pluginOptions___plugins___name",
+  PluginCreatorPluginOptionsPluginsVersion = "pluginCreator___pluginOptions___plugins___version",
+  PluginCreatorPluginOptionsPluginsNodeApIs = "pluginCreator___pluginOptions___plugins___nodeAPIs",
+  PluginCreatorPluginOptionsPluginsBrowserApIs = "pluginCreator___pluginOptions___plugins___browserAPIs",
+  PluginCreatorPluginOptionsPluginsSsrApIs = "pluginCreator___pluginOptions___plugins___ssrAPIs",
+  PluginCreatorPluginOptionsPluginsPluginFilepath = "pluginCreator___pluginOptions___plugins___pluginFilepath",
   PluginCreatorPluginOptionsIsTsx = "pluginCreator___pluginOptions___isTSX",
   PluginCreatorPluginOptionsAllExtensions = "pluginCreator___pluginOptions___allExtensions",
   PluginCreatorPluginOptionsName = "pluginCreator___pluginOptions___name",
   PluginCreatorPluginOptionsPath = "pluginCreator___pluginOptions___path",
   PluginCreatorPluginOptionsIgnore = "pluginCreator___pluginOptions___ignore",
+  PluginCreatorPluginOptionsCmsConfig = "pluginCreator___pluginOptions___cmsConfig",
+  PluginCreatorPluginOptionsMaxWidth = "pluginCreator___pluginOptions___maxWidth",
+  PluginCreatorPluginOptionsBackgroundColor = "pluginCreator___pluginOptions___backgroundColor",
+  PluginCreatorPluginOptionsPathPrefix = "pluginCreator___pluginOptions___pathPrefix",
+  PluginCreatorPluginOptionsWrapperStyle = "pluginCreator___pluginOptions___wrapperStyle",
+  PluginCreatorPluginOptionsLinkImagesToOriginal = "pluginCreator___pluginOptions___linkImagesToOriginal",
+  PluginCreatorPluginOptionsShowCaptions = "pluginCreator___pluginOptions___showCaptions",
+  PluginCreatorPluginOptionsMarkdownCaptions = "pluginCreator___pluginOptions___markdownCaptions",
+  PluginCreatorPluginOptionsWithWebp = "pluginCreator___pluginOptions___withWebp",
+  PluginCreatorPluginOptionsTracedSvg = "pluginCreator___pluginOptions___tracedSVG",
+  PluginCreatorPluginOptionsLoading = "pluginCreator___pluginOptions___loading",
   PluginCreatorPluginOptionsPathCheck = "pluginCreator___pluginOptions___pathCheck",
   PluginCreatorNodeApIs = "pluginCreator___nodeAPIs",
+  PluginCreatorBrowserApIs = "pluginCreator___browserAPIs",
   PluginCreatorSsrApIs = "pluginCreator___ssrAPIs",
   PluginCreatorPluginFilepath = "pluginCreator___pluginFilepath",
   PluginCreatorPackageJsonName = "pluginCreator___packageJson___name",
@@ -2290,6 +2434,7 @@ export type SitePlugin = Node & {
   version?: Maybe<Scalars["String"]>;
   pluginOptions?: Maybe<SitePluginPluginOptions>;
   nodeAPIs?: Maybe<Array<Maybe<Scalars["String"]>>>;
+  browserAPIs?: Maybe<Array<Maybe<Scalars["String"]>>>;
   ssrAPIs?: Maybe<Array<Maybe<Scalars["String"]>>>;
   pluginFilepath?: Maybe<Scalars["String"]>;
   packageJson?: Maybe<SitePluginPackageJson>;
@@ -2412,13 +2557,45 @@ export enum SitePluginFieldsEnum {
   Resolve = "resolve",
   Name = "name",
   Version = "version",
+  PluginOptionsPlugins = "pluginOptions___plugins",
+  PluginOptionsPluginsResolve = "pluginOptions___plugins___resolve",
+  PluginOptionsPluginsId = "pluginOptions___plugins___id",
+  PluginOptionsPluginsName = "pluginOptions___plugins___name",
+  PluginOptionsPluginsVersion = "pluginOptions___plugins___version",
+  PluginOptionsPluginsPluginOptionsCmsConfig = "pluginOptions___plugins___pluginOptions___cmsConfig",
+  PluginOptionsPluginsPluginOptionsMaxWidth = "pluginOptions___plugins___pluginOptions___maxWidth",
+  PluginOptionsPluginsPluginOptionsBackgroundColor = "pluginOptions___plugins___pluginOptions___backgroundColor",
+  PluginOptionsPluginsPluginOptionsPathPrefix = "pluginOptions___plugins___pluginOptions___pathPrefix",
+  PluginOptionsPluginsPluginOptionsWrapperStyle = "pluginOptions___plugins___pluginOptions___wrapperStyle",
+  PluginOptionsPluginsPluginOptionsLinkImagesToOriginal = "pluginOptions___plugins___pluginOptions___linkImagesToOriginal",
+  PluginOptionsPluginsPluginOptionsShowCaptions = "pluginOptions___plugins___pluginOptions___showCaptions",
+  PluginOptionsPluginsPluginOptionsMarkdownCaptions = "pluginOptions___plugins___pluginOptions___markdownCaptions",
+  PluginOptionsPluginsPluginOptionsWithWebp = "pluginOptions___plugins___pluginOptions___withWebp",
+  PluginOptionsPluginsPluginOptionsTracedSvg = "pluginOptions___plugins___pluginOptions___tracedSVG",
+  PluginOptionsPluginsPluginOptionsLoading = "pluginOptions___plugins___pluginOptions___loading",
+  PluginOptionsPluginsNodeApIs = "pluginOptions___plugins___nodeAPIs",
+  PluginOptionsPluginsBrowserApIs = "pluginOptions___plugins___browserAPIs",
+  PluginOptionsPluginsSsrApIs = "pluginOptions___plugins___ssrAPIs",
+  PluginOptionsPluginsPluginFilepath = "pluginOptions___plugins___pluginFilepath",
   PluginOptionsIsTsx = "pluginOptions___isTSX",
   PluginOptionsAllExtensions = "pluginOptions___allExtensions",
   PluginOptionsName = "pluginOptions___name",
   PluginOptionsPath = "pluginOptions___path",
   PluginOptionsIgnore = "pluginOptions___ignore",
+  PluginOptionsCmsConfig = "pluginOptions___cmsConfig",
+  PluginOptionsMaxWidth = "pluginOptions___maxWidth",
+  PluginOptionsBackgroundColor = "pluginOptions___backgroundColor",
+  PluginOptionsPathPrefix = "pluginOptions___pathPrefix",
+  PluginOptionsWrapperStyle = "pluginOptions___wrapperStyle",
+  PluginOptionsLinkImagesToOriginal = "pluginOptions___linkImagesToOriginal",
+  PluginOptionsShowCaptions = "pluginOptions___showCaptions",
+  PluginOptionsMarkdownCaptions = "pluginOptions___markdownCaptions",
+  PluginOptionsWithWebp = "pluginOptions___withWebp",
+  PluginOptionsTracedSvg = "pluginOptions___tracedSVG",
+  PluginOptionsLoading = "pluginOptions___loading",
   PluginOptionsPathCheck = "pluginOptions___pathCheck",
   NodeApIs = "nodeAPIs",
+  BrowserApIs = "browserAPIs",
   SsrApIs = "ssrAPIs",
   PluginFilepath = "pluginFilepath",
   PackageJsonName = "packageJson___name",
@@ -2449,6 +2626,7 @@ export type SitePluginFilterInput = {
   version?: Maybe<StringQueryOperatorInput>;
   pluginOptions?: Maybe<SitePluginPluginOptionsFilterInput>;
   nodeAPIs?: Maybe<StringQueryOperatorInput>;
+  browserAPIs?: Maybe<StringQueryOperatorInput>;
   ssrAPIs?: Maybe<StringQueryOperatorInput>;
   pluginFilepath?: Maybe<StringQueryOperatorInput>;
   packageJson?: Maybe<SitePluginPackageJsonFilterInput>;
@@ -2538,21 +2716,103 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 
 export type SitePluginPluginOptions = {
   __typename?: "SitePluginPluginOptions";
+  plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
   isTSX?: Maybe<Scalars["Boolean"]>;
   allExtensions?: Maybe<Scalars["Boolean"]>;
   name?: Maybe<Scalars["String"]>;
   path?: Maybe<Scalars["String"]>;
   ignore?: Maybe<Array<Maybe<Scalars["String"]>>>;
+  cmsConfig?: Maybe<Scalars["String"]>;
+  maxWidth?: Maybe<Scalars["Int"]>;
+  backgroundColor?: Maybe<Scalars["String"]>;
+  pathPrefix?: Maybe<Scalars["String"]>;
+  wrapperStyle?: Maybe<Scalars["String"]>;
+  linkImagesToOriginal?: Maybe<Scalars["Boolean"]>;
+  showCaptions?: Maybe<Scalars["Boolean"]>;
+  markdownCaptions?: Maybe<Scalars["Boolean"]>;
+  withWebp?: Maybe<Scalars["Boolean"]>;
+  tracedSVG?: Maybe<Scalars["Boolean"]>;
+  loading?: Maybe<Scalars["String"]>;
   pathCheck?: Maybe<Scalars["Boolean"]>;
 };
 
 export type SitePluginPluginOptionsFilterInput = {
+  plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
   isTSX?: Maybe<BooleanQueryOperatorInput>;
   allExtensions?: Maybe<BooleanQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   ignore?: Maybe<StringQueryOperatorInput>;
+  cmsConfig?: Maybe<StringQueryOperatorInput>;
+  maxWidth?: Maybe<IntQueryOperatorInput>;
+  backgroundColor?: Maybe<StringQueryOperatorInput>;
+  pathPrefix?: Maybe<StringQueryOperatorInput>;
+  wrapperStyle?: Maybe<StringQueryOperatorInput>;
+  linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
+  showCaptions?: Maybe<BooleanQueryOperatorInput>;
+  markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
+  withWebp?: Maybe<BooleanQueryOperatorInput>;
+  tracedSVG?: Maybe<BooleanQueryOperatorInput>;
+  loading?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPlugins = {
+  __typename?: "SitePluginPluginOptionsPlugins";
+  resolve?: Maybe<Scalars["String"]>;
+  id?: Maybe<Scalars["String"]>;
+  name?: Maybe<Scalars["String"]>;
+  version?: Maybe<Scalars["String"]>;
+  pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptions>;
+  nodeAPIs?: Maybe<Array<Maybe<Scalars["String"]>>>;
+  browserAPIs?: Maybe<Array<Maybe<Scalars["String"]>>>;
+  ssrAPIs?: Maybe<Array<Maybe<Scalars["String"]>>>;
+  pluginFilepath?: Maybe<Scalars["String"]>;
+};
+
+export type SitePluginPluginOptionsPluginsFilterInput = {
+  resolve?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  name?: Maybe<StringQueryOperatorInput>;
+  version?: Maybe<StringQueryOperatorInput>;
+  pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsFilterInput>;
+  nodeAPIs?: Maybe<StringQueryOperatorInput>;
+  browserAPIs?: Maybe<StringQueryOperatorInput>;
+  ssrAPIs?: Maybe<StringQueryOperatorInput>;
+  pluginFilepath?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPluginsFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsPluginsFilterInput>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptions = {
+  __typename?: "SitePluginPluginOptionsPluginsPluginOptions";
+  cmsConfig?: Maybe<Scalars["String"]>;
+  maxWidth?: Maybe<Scalars["Int"]>;
+  backgroundColor?: Maybe<Scalars["String"]>;
+  pathPrefix?: Maybe<Scalars["String"]>;
+  wrapperStyle?: Maybe<Scalars["String"]>;
+  linkImagesToOriginal?: Maybe<Scalars["Boolean"]>;
+  showCaptions?: Maybe<Scalars["Boolean"]>;
+  markdownCaptions?: Maybe<Scalars["Boolean"]>;
+  withWebp?: Maybe<Scalars["Boolean"]>;
+  tracedSVG?: Maybe<Scalars["Boolean"]>;
+  loading?: Maybe<Scalars["String"]>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
+  cmsConfig?: Maybe<StringQueryOperatorInput>;
+  maxWidth?: Maybe<IntQueryOperatorInput>;
+  backgroundColor?: Maybe<StringQueryOperatorInput>;
+  pathPrefix?: Maybe<StringQueryOperatorInput>;
+  wrapperStyle?: Maybe<StringQueryOperatorInput>;
+  linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
+  showCaptions?: Maybe<BooleanQueryOperatorInput>;
+  markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
+  withWebp?: Maybe<BooleanQueryOperatorInput>;
+  tracedSVG?: Maybe<BooleanQueryOperatorInput>;
+  loading?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginSortInput = {
@@ -2565,12 +2825,14 @@ export type SiteSiteMetadata = {
   title?: Maybe<Scalars["String"]>;
   description?: Maybe<Scalars["String"]>;
   author?: Maybe<Scalars["String"]>;
+  siteUrl?: Maybe<Scalars["String"]>;
 };
 
 export type SiteSiteMetadataFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
+  siteUrl?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SiteSortInput = {

@@ -22,3 +22,4 @@ collections:
       - { label: "Author", name: "author", widget: hidden, default: Mykyta Vlasov }
       - { label: "Type", name: "type", widget: hidden, default: post }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Full image", name: "cover_img", widget: "image" }

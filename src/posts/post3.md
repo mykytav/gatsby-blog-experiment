@@ -8,6 +8,7 @@ tags:
   - Chorizo
 author: Mykyta Vlasov
 type: post
+cover_img: ../images/img1.jpg
 ---
 
 ## Chorizo 🥺

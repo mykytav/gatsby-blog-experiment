@@ -8,6 +8,7 @@ tags:
   - post
 author: Mykyta Vlasov
 type: post
+cover_img: ../images/img4.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada iaculis ligula, et volutpat elit elementum at. Nulla at pellentesque mauris. Aliquam elementum, tellus sed luctus suscipit, mi elit aliquet tellus, vitae mattis libero leo quis ipsum. Nullam ultrices dui risus, a porttitor nibh condimentum ut. Suspendisse iaculis justo quis dui viverra vehicula. Quisque et finibus justo, at pellentesque dui. Nunc tempus lorem eu sem porttitor, ut fringilla nibh aliquet. Nulla sapien leo, ullamcorper et elit quis, ullamcorper congue turpis. Nullam nec sem elit. Maecenas euismod dui vitae nunc placerat, in facilisis nunc congue. Nullam semper mauris eu congue molestie. Quisque pulvinar ex ac nisi ultricies, eget tristique sem semper. Vestibulum id condimentum orci, nec eleifend nisl.
 
