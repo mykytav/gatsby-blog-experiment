@@ -1,6 +1,6 @@
 ---
-title: "Post1"
-slug: "/first-post"
+title: Post1
+slug: /first-post
 date: 2019-08-16T16:34:01.520Z
 draft: fasle
 categories: General
@@ -8,6 +8,7 @@ tags:
   - Hello
 author: Mykyta Vlasov
 type: post
+cover_img: /uploads/img2.jpg
 ---
 
 ## Hello
