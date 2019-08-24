@@ -1,6 +1,6 @@
 ---
-title: "Post2"
-slug: "/second-post"
+title: Second Post - Fasting on Fast Harley
+slug: /second-post
 date: 2019-08-17T16:34:01.520Z
 draft: false
 categories: General
@@ -8,10 +8,9 @@ tags:
   - Wasyanya
 author: Mykyta Vlasov
 type: post
-cover_img: /uploads/img2.jpg
+cover_img: /uploads/harley.jpg
 ---
-
-## Wasyanya
+## Wasyanya Prisyadiem?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium dictum condimentum. Fusce gravida mauris nulla. Pellentesque ex diam, pretium quis metus sodales, varius sodales diam. In feugiat purus at tortor posuere ornare. Donec scelerisque laoreet pharetra. Sed volutpat dui non rhoncus rhoncus. Donec non purus non odio blandit elementum in mollis velit. Mauris viverra tellus sed venenatis condimentum. Donec pharetra, est ut dignissim ullamcorper, justo lectus varius tortor, id fringilla mauris leo et ante. Aliquam id facilisis mauris.
 
@@ -22,5 +21,3 @@ Phasellus tempus lacinia purus, in accumsan turpis interdum a. Vestibulum ante i
 Cras urna ante, tempus ut consectetur sit amet, ornare vel mauris. Fusce vulputate pellentesque tellus. Vestibulum imperdiet dui quam, vel rutrum eros consectetur sed. Nullam sodales porttitor dolor in vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris non congue nisi, non maximus turpis. Ut sit amet felis at odio consequat dignissim. Nam at cursus lectus. Ut egestas ex eu gravida dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed faucibus lacinia venenatis. Aenean bibendum diam eget lacinia eleifend. Integer dapibus lacinia nunc eu tempor. Aliquam auctor massa libero, in condimentum odio lacinia eget. Praesent laoreet nulla nisi, id elementum odio dapibus ac.
 
 Pellentesque eu mauris semper, convallis neque ut, aliquam lectus. In cursus mattis nisi, eget vehicula mauris pulvinar vitae. Pellentesque a risus ac tortor rhoncus efficitur. Quisque rutrum mi in fringilla tempus. Nullam ornare velit ex, nec bibendum enim auctor et. Etiam aliquam id nunc in bibendum. Ut vel aliquam erat, sit amet pellentesque magna. Sed et odio elit. Sed imperdiet enim eget nisi aliquam pharetra. Nunc consequat mattis nibh a consectetur.
-
-
