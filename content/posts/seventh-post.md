@@ -1,6 +1,6 @@
 ---
-title: Seventh-post
-slug: /seventh-post
+title: Fifth post - WOW
+slug: /wow
 date: 2019-08-22T18:47:23.693Z
 draft: false
 categories: Image
