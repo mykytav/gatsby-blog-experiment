@@ -5,10 +5,6 @@ hooks:
 schema: "http://localhost:8000/___graphql"
 generates:
   ./src/graphql.types.ts:
-    config:
-    # namingConvention:
-    #   typeNames: change-case#pascalCase
-    #   enumValues: change-case#upperCase
     plugins:
       - "typescript"
       - "typescript-operations"

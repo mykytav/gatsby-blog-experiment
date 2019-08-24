@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Testing Gatsby cause you know just trying it out`,
-    author: `@mykytav`,
+    author: `Mykyta Vlasov`,
     siteUrl: "https://flamboyant-wiles-a4aa81.netlify.com",
   },
   plugins: [
@@ -22,30 +22,8 @@ module.exports = {
     },
     `gatsby-plugin-tslint`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts/`,
-        ignore: [`**/\.*`],
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/static/uploads`,
-        name: "cover_img",
-      },
-    },
+    `gatsby-transformer-sharp`,
     netlifyCmsPaths,
     {
       resolve: `gatsby-transformer-remark`,
@@ -60,6 +38,29 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    // order matter in source-filesystem
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/uploads`,
+        name: "assets",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/images`,
+        name: "images",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `posts`,
+        path: `${__dirname}/content/posts/`,
+        ignore: [`**/\.*`],
       },
     },
     {

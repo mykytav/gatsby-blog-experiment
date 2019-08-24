@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-import gatsbyLogo from "../images/gatsby-icon.png";
+import Logo from "../images/logo.jpg";
 
 const Header = ({ siteTitle }: { siteTitle: string }) => (
   <header
@@ -24,7 +24,7 @@ const Header = ({ siteTitle }: { siteTitle: string }) => (
             textDecoration: `none`,
           }}
         >
-          <img style={{ width: "100px" }} src={gatsbyLogo} alt="Gatsby logo" />
+          <img style={{ width: "100px" }} src={Logo} alt="Gatsby logo" />
         </Link>
       </h1>
     </div>

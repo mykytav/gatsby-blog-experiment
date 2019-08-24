@@ -1763,10 +1763,10 @@ export enum PotraceTurnPolicy {
 
 export type Query = {
   __typename?: "Query";
-  file?: Maybe<File>;
-  allFile: FileConnection;
   imageSharp?: Maybe<ImageSharp>;
   allImageSharp: ImageSharpConnection;
+  file?: Maybe<File>;
+  allFile: FileConnection;
   markdownRemark?: Maybe<MarkdownRemark>;
   allMarkdownRemark: MarkdownRemarkConnection;
   sitePage?: Maybe<SitePage>;
@@ -1777,6 +1777,26 @@ export type Query = {
   allSite: SiteConnection;
   directory?: Maybe<Directory>;
   allDirectory: DirectoryConnection;
+};
+
+export type QueryImageSharpArgs = {
+  id?: Maybe<StringQueryOperatorInput>;
+  fixed?: Maybe<ImageSharpFixedFilterInput>;
+  resolutions?: Maybe<ImageSharpResolutionsFilterInput>;
+  fluid?: Maybe<ImageSharpFluidFilterInput>;
+  sizes?: Maybe<ImageSharpSizesFilterInput>;
+  original?: Maybe<ImageSharpOriginalFilterInput>;
+  resize?: Maybe<ImageSharpResizeFilterInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+};
+
+export type QueryAllImageSharpArgs = {
+  filter?: Maybe<ImageSharpFilterInput>;
+  sort?: Maybe<ImageSharpSortInput>;
+  skip?: Maybe<Scalars["Int"]>;
+  limit?: Maybe<Scalars["Int"]>;
 };
 
 export type QueryFileArgs = {
@@ -1825,26 +1845,6 @@ export type QueryFileArgs = {
 export type QueryAllFileArgs = {
   filter?: Maybe<FileFilterInput>;
   sort?: Maybe<FileSortInput>;
-  skip?: Maybe<Scalars["Int"]>;
-  limit?: Maybe<Scalars["Int"]>;
-};
-
-export type QueryImageSharpArgs = {
-  id?: Maybe<StringQueryOperatorInput>;
-  fixed?: Maybe<ImageSharpFixedFilterInput>;
-  resolutions?: Maybe<ImageSharpResolutionsFilterInput>;
-  fluid?: Maybe<ImageSharpFluidFilterInput>;
-  sizes?: Maybe<ImageSharpSizesFilterInput>;
-  original?: Maybe<ImageSharpOriginalFilterInput>;
-  resize?: Maybe<ImageSharpResizeFilterInput>;
-  parent?: Maybe<NodeFilterInput>;
-  children?: Maybe<NodeFilterListInput>;
-  internal?: Maybe<InternalFilterInput>;
-};
-
-export type QueryAllImageSharpArgs = {
-  filter?: Maybe<ImageSharpFilterInput>;
-  sort?: Maybe<ImageSharpSortInput>;
   skip?: Maybe<Scalars["Int"]>;
   limit?: Maybe<Scalars["Int"]>;
 };
@@ -2196,10 +2196,54 @@ export type SitePageConnectionGroupArgs = {
 export type SitePageContext = {
   __typename?: "SitePageContext";
   slug?: Maybe<Scalars["String"]>;
+  previous?: Maybe<SitePageContextPrevious>;
+  next?: Maybe<SitePageContextNext>;
 };
 
 export type SitePageContextFilterInput = {
   slug?: Maybe<StringQueryOperatorInput>;
+  previous?: Maybe<SitePageContextPreviousFilterInput>;
+  next?: Maybe<SitePageContextNextFilterInput>;
+};
+
+export type SitePageContextNext = {
+  __typename?: "SitePageContextNext";
+  frontmatter?: Maybe<SitePageContextNextFrontmatter>;
+};
+
+export type SitePageContextNextFilterInput = {
+  frontmatter?: Maybe<SitePageContextNextFrontmatterFilterInput>;
+};
+
+export type SitePageContextNextFrontmatter = {
+  __typename?: "SitePageContextNextFrontmatter";
+  slug?: Maybe<Scalars["String"]>;
+  title?: Maybe<Scalars["String"]>;
+};
+
+export type SitePageContextNextFrontmatterFilterInput = {
+  slug?: Maybe<StringQueryOperatorInput>;
+  title?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePageContextPrevious = {
+  __typename?: "SitePageContextPrevious";
+  frontmatter?: Maybe<SitePageContextPreviousFrontmatter>;
+};
+
+export type SitePageContextPreviousFilterInput = {
+  frontmatter?: Maybe<SitePageContextPreviousFrontmatterFilterInput>;
+};
+
+export type SitePageContextPreviousFrontmatter = {
+  __typename?: "SitePageContextPreviousFrontmatter";
+  slug?: Maybe<Scalars["String"]>;
+  title?: Maybe<Scalars["String"]>;
+};
+
+export type SitePageContextPreviousFrontmatterFilterInput = {
+  slug?: Maybe<StringQueryOperatorInput>;
+  title?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePageEdge = {
@@ -2302,6 +2346,11 @@ export enum SitePageFieldsEnum {
   ComponentChunkName = "componentChunkName",
   IsCreatedByStatefulCreatePages = "isCreatedByStatefulCreatePages",
   ContextSlug = "context___slug",
+  ContextPreviousFrontmatterSlug = "context___previous___frontmatter___slug",
+  ContextPreviousFrontmatterTitle = "context___previous___frontmatter___title",
+  ContextNextFrontmatterSlug = "context___next___frontmatter___slug",
+  ContextNextFrontmatterTitle = "context___next___frontmatter___title",
+  PluginCreatorId = "pluginCreator___id",
   PluginCreatorParentId = "pluginCreator___parent___id",
   PluginCreatorParentParentId = "pluginCreator___parent___parent___id",
   PluginCreatorParentParentChildren = "pluginCreator___parent___parent___children",
@@ -2353,9 +2402,6 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsPluginsPluginFilepath = "pluginCreator___pluginOptions___plugins___pluginFilepath",
   PluginCreatorPluginOptionsIsTsx = "pluginCreator___pluginOptions___isTSX",
   PluginCreatorPluginOptionsAllExtensions = "pluginCreator___pluginOptions___allExtensions",
-  PluginCreatorPluginOptionsName = "pluginCreator___pluginOptions___name",
-  PluginCreatorPluginOptionsPath = "pluginCreator___pluginOptions___path",
-  PluginCreatorPluginOptionsIgnore = "pluginCreator___pluginOptions___ignore",
   PluginCreatorPluginOptionsCmsConfig = "pluginCreator___pluginOptions___cmsConfig",
   PluginCreatorPluginOptionsMaxWidth = "pluginCreator___pluginOptions___maxWidth",
   PluginCreatorPluginOptionsBackgroundColor = "pluginCreator___pluginOptions___backgroundColor",
@@ -2367,6 +2413,9 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsWithWebp = "pluginCreator___pluginOptions___withWebp",
   PluginCreatorPluginOptionsTracedSvg = "pluginCreator___pluginOptions___tracedSVG",
   PluginCreatorPluginOptionsLoading = "pluginCreator___pluginOptions___loading",
+  PluginCreatorPluginOptionsPath = "pluginCreator___pluginOptions___path",
+  PluginCreatorPluginOptionsName = "pluginCreator___pluginOptions___name",
+  PluginCreatorPluginOptionsIgnore = "pluginCreator___pluginOptions___ignore",
   PluginCreatorPluginOptionsPathCheck = "pluginCreator___pluginOptions___pathCheck",
   PluginCreatorNodeApIs = "pluginCreator___nodeAPIs",
   PluginCreatorBrowserApIs = "pluginCreator___browserAPIs",
@@ -2388,7 +2437,6 @@ export enum SitePageFieldsEnum {
   PluginCreatorPackageJsonPeerDependenciesName = "pluginCreator___packageJson___peerDependencies___name",
   PluginCreatorPackageJsonPeerDependenciesVersion = "pluginCreator___packageJson___peerDependencies___version",
   PluginCreatorPackageJsonKeywords = "pluginCreator___packageJson___keywords",
-  PluginCreatorId = "pluginCreatorId",
   ComponentPath = "componentPath",
 }
 
@@ -2579,9 +2627,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsPluginsPluginFilepath = "pluginOptions___plugins___pluginFilepath",
   PluginOptionsIsTsx = "pluginOptions___isTSX",
   PluginOptionsAllExtensions = "pluginOptions___allExtensions",
-  PluginOptionsName = "pluginOptions___name",
-  PluginOptionsPath = "pluginOptions___path",
-  PluginOptionsIgnore = "pluginOptions___ignore",
   PluginOptionsCmsConfig = "pluginOptions___cmsConfig",
   PluginOptionsMaxWidth = "pluginOptions___maxWidth",
   PluginOptionsBackgroundColor = "pluginOptions___backgroundColor",
@@ -2593,6 +2638,9 @@ export enum SitePluginFieldsEnum {
   PluginOptionsWithWebp = "pluginOptions___withWebp",
   PluginOptionsTracedSvg = "pluginOptions___tracedSVG",
   PluginOptionsLoading = "pluginOptions___loading",
+  PluginOptionsPath = "pluginOptions___path",
+  PluginOptionsName = "pluginOptions___name",
+  PluginOptionsIgnore = "pluginOptions___ignore",
   PluginOptionsPathCheck = "pluginOptions___pathCheck",
   NodeApIs = "nodeAPIs",
   BrowserApIs = "browserAPIs",
@@ -2719,9 +2767,6 @@ export type SitePluginPluginOptions = {
   plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
   isTSX?: Maybe<Scalars["Boolean"]>;
   allExtensions?: Maybe<Scalars["Boolean"]>;
-  name?: Maybe<Scalars["String"]>;
-  path?: Maybe<Scalars["String"]>;
-  ignore?: Maybe<Array<Maybe<Scalars["String"]>>>;
   cmsConfig?: Maybe<Scalars["String"]>;
   maxWidth?: Maybe<Scalars["Int"]>;
   backgroundColor?: Maybe<Scalars["String"]>;
@@ -2733,6 +2778,9 @@ export type SitePluginPluginOptions = {
   withWebp?: Maybe<Scalars["Boolean"]>;
   tracedSVG?: Maybe<Scalars["Boolean"]>;
   loading?: Maybe<Scalars["String"]>;
+  path?: Maybe<Scalars["String"]>;
+  name?: Maybe<Scalars["String"]>;
+  ignore?: Maybe<Array<Maybe<Scalars["String"]>>>;
   pathCheck?: Maybe<Scalars["Boolean"]>;
 };
 
@@ -2740,9 +2788,6 @@ export type SitePluginPluginOptionsFilterInput = {
   plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
   isTSX?: Maybe<BooleanQueryOperatorInput>;
   allExtensions?: Maybe<BooleanQueryOperatorInput>;
-  name?: Maybe<StringQueryOperatorInput>;
-  path?: Maybe<StringQueryOperatorInput>;
-  ignore?: Maybe<StringQueryOperatorInput>;
   cmsConfig?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   backgroundColor?: Maybe<StringQueryOperatorInput>;
@@ -2754,6 +2799,9 @@ export type SitePluginPluginOptionsFilterInput = {
   withWebp?: Maybe<BooleanQueryOperatorInput>;
   tracedSVG?: Maybe<BooleanQueryOperatorInput>;
   loading?: Maybe<StringQueryOperatorInput>;
+  path?: Maybe<StringQueryOperatorInput>;
+  name?: Maybe<StringQueryOperatorInput>;
+  ignore?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
 

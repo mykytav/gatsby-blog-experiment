@@ -1,17 +1,17 @@
 ---
-title: "Post2"
-slug: "/second-post"
-date: 2019-08-16T16:34:01.520Z
+title: "Post3"
+slug: "/third-post"
+date: 2019-08-18T16:34:01.520Z
 draft: false
 categories: General
 tags:
-  - Wasyanya
+  - Chorizo
 author: Mykyta Vlasov
 type: post
-cover_img: ../images/img2.jpg
+cover_img: /uploads/img2.jpg
 ---
 
-## Wasyanya
+## Chorizo 🥺
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium dictum condimentum. Fusce gravida mauris nulla. Pellentesque ex diam, pretium quis metus sodales, varius sodales diam. In feugiat purus at tortor posuere ornare. Donec scelerisque laoreet pharetra. Sed volutpat dui non rhoncus rhoncus. Donec non purus non odio blandit elementum in mollis velit. Mauris viverra tellus sed venenatis condimentum. Donec pharetra, est ut dignissim ullamcorper, justo lectus varius tortor, id fringilla mauris leo et ante. Aliquam id facilisis mauris.
 
