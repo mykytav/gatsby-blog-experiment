@@ -1,6 +1,6 @@
 ---
-title: Sixth Post
-slug: /sixth-post
+title: Sixth Post - Freedom
+slug: /freedom
 date: 2019-08-20T17:24:52.858Z
 draft: false
 categories: images
