@@ -1,6 +1,6 @@
 ---
 title: Second Post - Fasting on Fast Harley
-slug: /fasting-on-fast-harley
+slug: /fasting-on-harley
 date: 2019-08-17T16:34:01.520Z
 draft: false
 categories: General
