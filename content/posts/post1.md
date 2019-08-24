@@ -1,5 +1,5 @@
 ---
-title: Post1
+title: First Post - Bless the Lord oh my soul
 slug: /first-post
 date: 2019-08-16T16:34:01.520Z
 draft: fasle
@@ -8,7 +8,7 @@ tags:
   - Hello
 author: Mykyta Vlasov
 type: post
-cover_img: /uploads/img2.jpg
+cover_img: /uploads/cross.jpg
 ---
 
 ## Hello
